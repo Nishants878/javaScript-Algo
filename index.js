@@ -36,7 +36,9 @@ const primeInBetween = (b, b1) =>{
       for(let j = 2; j<i; j++){
           if(i%j == 0){
               b4=1;
+             
               break;
+            
           }
       }
 
@@ -107,3 +109,47 @@ checkLastDigitSame(8,38,4)
 
 
 // program to check whether the last digit of three numbers is same 
+
+// program to find the HCF or GCD of two integers
+  
+const highestCommonFactor = (e, e1) =>{
+    let hcf;
+    for(let i = 1; i <= e && i <= e1; i++){
+        if(e%i == 0 && e1%i == 0){
+            hcf = i;
+        }
+    }
+
+    return console.log(hcf)
+}
+
+highestCommonFactor(60,72)
+// program to find the HCF or GCD of two integers
+
+// program to check if the string is palindrome or not
+const checkPalindrome = (str) =>{
+    const f = str.split('').reverse().join('');
+    if(f == str){
+        console.log(`${str} is palindrome`)
+    }else{
+        console.log("not palindrome")
+    }
+}
+
+checkPalindrome("Karan")
+// program to check if the string is palindrome or not
+
+// program to sort words in alphabetical order
+
+   const alphabeticalOrder = (gStr) =>{
+       const g = gStr.split(' ');
+       g.sort();
+
+       for(const element of g){
+           console.log(element)
+       }
+   }
+
+   alphabeticalOrder("I am learning JavaScript")
+
+// program to sort words in alphabetical order
