@@ -153,3 +153,41 @@ checkPalindrome("Karan")
    alphabeticalOrder("I am learning JavaScript")
 
 // program to sort words in alphabetical order
+
+//For building the encrypted string:
+//Take every 2nd char from the string, then the other chars, that are not every 2nd char, and concat them as new String.
+//Do this n times!
+
+//example:-  "This is a test!", 1 -> "hsi  etTi sats!"
+//"This is a test!", 2 -> "hsi  etTi sats!" -> "s eT ashi tist!"
+
+
+const encrypt = (s, f) => {
+    if (!s) return s;
+    const l = s.length;
+    for (let i = 0; i < f; i++) {
+      let x = '', y = '';
+      for (let j = 0; j < l; j++) {
+        if (j % 2) x += s[j];
+        else y += s[j];
+      }
+      s = x + y;
+    }
+    return s;
+  }
+  
+  const decrypt = (s, f) => {
+    if (!s) return s;
+    const l = Math.floor(s.length / 2);
+    for (let i = 0; i < f; i++) {
+      let x = s.slice(0, l), y = s.slice(l);
+      s = '';
+      for (let j = 0; j < l + 1; j++) 
+        s += (y[j] ? y[j] : '') + (x[j] ? x[j] : '');
+    }
+    return s;
+  }
+
+//For building the encrypted string:
+//Take every 2nd char from the string, then the other chars, that are not every 2nd char, and concat them as new String.
+//Do this n times!
