@@ -191,3 +191,45 @@ const encrypt = (s, f) => {
 //For building the encrypted string:
 //Take every 2nd char from the string, then the other chars, that are not every 2nd char, and concat them as new String.
 //Do this n times!
+
+//async await
+
+console.log('person:1');
+console.log('person:2');
+const promiseWifeWillBring = new Promise((resolve, reject) =>{
+    setTimeout(() =>{
+        resolve('person');
+    },3000)
+});
+
+promiseWifeWillBring.then((t) =>{
+    console.log(`${t}:3`)
+});
+console.log('Person:4');
+console.log('person:5');
+
+async function showAvatar() {
+
+    // read our JSON
+    let response = await fetch('/article/promise-chaining/user.json');
+    let user = await response.json();
+  
+    // read github user
+    let githubResponse = await fetch(`https://api.github.com/users/${user.name}`);
+    let githubUser = await githubResponse.json();
+  
+    // show the avatar
+    let img = document.createElement('img');
+    img.src = githubUser.avatar_url;
+    img.className = "promise-avatar-example";
+    document.body.append(img);
+  
+    // wait 3 seconds
+    await new Promise((resolve, reject) => setTimeout(resolve, 3000));
+  
+    img.remove();
+  
+    return githubUser;
+  }
+  
+  showAvatar();
