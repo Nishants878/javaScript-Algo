@@ -1,3 +1,6 @@
+//The marketing team is spending way too much time typing in hashtags.
+
+
 function generateHashtag (str) {
     if(!str || /^\s*$/.test(str)){
            return console.log(false)
@@ -26,4 +29,16 @@ function generateHashtag (str) {
     }
 };
 
-generateHashtag("ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo Cat")
+//You want to create secret messages which can be deciphered by the Decipher this! kata. Here are the conditions:
+
+function encryptThis (text){
+    if(!text || /^\s*$/.test(text)){
+        return console.log(false)
+ }else{
+   
+      
+   
+   
+ }
+}
+encryptThis("hello world")
