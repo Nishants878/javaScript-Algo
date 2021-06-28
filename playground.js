@@ -36,9 +36,27 @@ function encryptThis (text){
         return console.log(false)
  }else{
    
-      
-   
+      let splittingFirst = text.split(' ');
+     
+  
+  
+    
+      let interChangingLastAndFirst = splittingFirst.map((x) =>{
+          let newSplit = x.split("");
+          let tempA = newSplit[1];
+          let tempB = newSplit[newSplit.length-1]
+          newSplit[newSplit.length-1] = tempA;
+          newSplit[1] = tempB
+         return newSplit.join("")
+         
+      });
+
+     let finalValue =  interChangingLastAndFirst.map((x) =>{
+         return x.charCodeAt(0) + x.slice(1)
+     });
+
+     return console.log(finalValue.join(" "))
    
  }
 }
-encryptThis("hello world")
+encryptThis("Hello all this is my first encryption")
