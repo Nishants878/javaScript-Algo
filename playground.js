@@ -70,9 +70,15 @@ function createPhoneNumber(numbers){
          return console.log(false)
      }
      else{
-         let filteringFirstThree = numbers.splice(0, 3)
+         let filteringFirstThree =`(${numbers.splice(0, 3).join("")})`
 
-         console.log(filteringFirstThree)
+        let lastSevenDigit = numbers.splice(0,7)
+         
+         let insertingDash = lastSevenDigit.splice(3,0,"-")
+
+         let insertingBlankSpace = lastSevenDigit.splice(0,0," ");
+      
+         return console.log(`"${filteringFirstThree}${lastSevenDigit.join("")}"`)
 
      }
 }
