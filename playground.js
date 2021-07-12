@@ -82,4 +82,22 @@ function createPhoneNumber(numbers){
 
      }
 }
-createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+
+//Complete the solution so that the function will break up camel casing, using a space between words.
+
+function solution(string) {
+    if(string === "" || " "){
+        return console.log(string)
+    }
+    else{
+        console.log("nat")
+    }
+}
+solution(" ")
+
+
+
+
+
+
