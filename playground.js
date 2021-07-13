@@ -87,14 +87,26 @@ function createPhoneNumber(numbers){
 //Complete the solution so that the function will break up camel casing, using a space between words.
 
 function solution(string) {
-    if(string === "" || " "){
-        return console.log(string)
+    if(!string || /^\s*$/.test(string)){
+        return string
     }
     else{
-        console.log("nat")
+        let stringParsed = string.split("");
+      let findingUpperCase = stringParsed.find(item =>{
+          return item == item.toUpperCase()
+      });
+      
+    let indexFinder = stringParsed.indexOf(findingUpperCase) ;
+     
+    let splicingFirstCase = stringParsed.splice(0,indexFinder," ");
+      
+    let finalArray = (`${splicingFirstCase.join("")}${stringParsed.join("")}`);
+
+    return console.log(finalArray)
+
     }
 }
-solution(" ")
+solution("camelCasingTest")
 
 
 
