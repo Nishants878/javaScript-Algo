@@ -106,9 +106,13 @@ function solution(string) {
 
     }
 }
-solution("camelCasingTest")
+solution("camelCasingTest");
 
+// for removing string :- JavaScript String Reference
 
+var str = 'Geeks for Geeks'.split("for");
+
+console.log(str);
 
 
 
