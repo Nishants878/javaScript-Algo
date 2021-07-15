@@ -112,8 +112,11 @@ solution("camelCasingTest");
 
 var str = 'Geeks for Geeks'.split("for");
 
+
+
+
+
+
 console.log(str);
-
-
 
 
