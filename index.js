@@ -232,4 +232,7 @@ async function showAvatar() {
     return githubUser;
   }
   
-  showAvatar();
+ 
+ 
+
+ 

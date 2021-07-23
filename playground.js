@@ -106,7 +106,7 @@ function solution(string) {
 
     }
 }
-solution("camelCasingTest");
+
 
 // for removing string :- JavaScript String Reference
 
@@ -117,6 +117,30 @@ var str = 'Geeks for Geeks'.split("for");
 
 
 
-console.log(str);
+ //Write a C program to compute the sum of the two given integer values. If the two values are the same, then return triple their sum.
 
+ function addNumber (n1, n2) {
+    if(n1 !== n2){
+        return console.log(n1 + n2)
+    }else{
+        return console.log(n1+n2 *3)
+    }
+}
+
+
+
+// Write a C program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference
+
+
+function absoluteDifference (n) {
+    const a = 51
+    if(n>=a){
+           return console.log((n-a)*3)
+    }else{
+        return console.log(a-n)
+    }
+}
+
+
+//Write a C program to check two given integers, and return true if one of them is 30 or if their sum is 30.
 
