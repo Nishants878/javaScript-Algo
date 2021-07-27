@@ -144,3 +144,59 @@ function absoluteDifference (n) {
 
 //Write a C program to check two given integers, and return true if one of them is 30 or if their sum is 30.
 
+const checkSumThirty = (n,e) =>{
+       if((n===30 || e === 30) || (n+e === 30)){
+            return console.log(true)
+       }else{
+           console.log(false)
+       }
+}
+
+//Write a C program to check whether a given positive number is a multiple of 3 or a multiple of 7
+
+const checkMultiple = (n) =>{
+     if((n%3 == 0) || (n%7 == 0)){
+         return console.log(true)
+     }
+     else{
+         console.log(false)
+     }
+} 
+
+// sum of an array
+
+const sumArray = (arr) =>{
+    return console.log(arr.reduce((a,b)=> a+b, 0))
+};
+
+
+const flattened = (arr) =>{
+    return console.log(arr.reduce((accumulator,currentValue)=> accumulator.concat(currentValue),[]))
+}
+
+//Group objects by a property
+
+let people = [
+    { name: 'Matt', age: 25 },
+    { name: 'Asma', age: 23 },
+    { name: 'Cami', age: 29 }
+  ];
+
+  let extractingAge = people.map(item => item.age)
+
+
+  //check Prime
+
+  const isPrime = (n) =>{
+      if(n<2) return console.log(false)
+
+      for(let k =2; k< n; k++ ){
+          if(n % k === 0){
+              return console.log(false)
+          }
+      }
+
+      return console.log(true)
+  }
+
+  isPrime(1)

@@ -52,8 +52,19 @@ str2.charCodeAt(0)
 let str3 = "Hello";
 let str4= "World";
 str3.concat(str4);
-HelloWorld
+
 //concat()
 
+
+//prototypes in js
+
+function Particles (){
+    this.x = 100;
+    this.y = 99;
+}
+
+let p = new Particles();
+
+console.log(p)
 
 
