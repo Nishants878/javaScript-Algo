@@ -199,4 +199,43 @@ let people = [
       return console.log(true)
   }
 
-  isPrime(1)
+ //fibanoci
+
+ const fib = (n) =>{
+     let a = 0;
+     let b = 1;
+   let  nextTerm;
+
+     for(let i =1; i<=n; i++){
+         console.log(a);
+         nextTerm = a+b;
+         a = b;
+         b = nextTerm
+     }
+
+ }
+// remove duplicates
+const duplicates = (arr) =>{
+  // return console.log([...new Set(arr)])  or
+  let filter = arr.filter((item, index) => arr.indexOf(item) === index);
+
+  return console.log(filter.join(''))
+}
+
+// duplicates(['🐑', 1, 2, '🐑', '🐑', 3])
+
+//reverse a string
+
+const reversing = (str) =>{
+   let splitter = str.split("").reverse().join("");
+   return console.log(splitter)
+}
+
+// sorting in descending order
+
+const sortingArray = (arr) =>{
+    return console.log(arr.sort((a,b) => b-a))
+};
+
+
+sortingArray([8,5,4,7,12,50,1,0,6])
