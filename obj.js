@@ -65,6 +65,4 @@ function Particles (){
 
 let p = new Particles();
 
-console.log(p)
-
 

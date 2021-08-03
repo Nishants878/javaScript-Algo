@@ -253,7 +253,20 @@ else {
 }
     
 };
-// program to print prime numbers between the two numbers
 
+// Write a JavaScript program to display the current day and time in the following format.
 
+const currentTime = () =>{
+    let dayList = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+    let date = new Date();
+    let today = date.getDay();
 
+    console.log(`Today is: ${dayList[today]}`)
+
+}
+
+// Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+
+function cloner (a){
+   
+}
