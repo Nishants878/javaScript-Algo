@@ -1,0 +1,41 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: calc(60% + 0.8vmin);
+    display: flex;
+    flex-direction: column;
+    
+}
+*{
+    box-sizing: border-box;
+  
+}
+
+header{
+    width: 100vw;
+    color: rgb(99, 99, 238);
+    font-size: 2rem;
+    text-align: center;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  section{
+      width: 25vw;
+      height: 35vh;
+      margin-right: 2rem;
+      border: 2px solid #ccc;
+      padding: 0.5rem;
+
+  }
+
+section>img{
+    height: 100%;
+    width: 100%;
+  
+}
+
