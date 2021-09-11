@@ -1,6 +1,8 @@
 const express = require("express"); // import
 const app = express();
+const http = require("http");
 const path = require("path");
+const hostname = "127.0.0.1";
 let courses = require("./model/courses.model");
 // app.get("/", (req, res) => res.sendFile("Index.html",{root:__dirname}));
 //app.get("/", (req, res) => res.json([{ id: 1, title: "React", price: 5000 }]));
@@ -20,4 +22,4 @@ app.delete("/courses/:id", (req, res) => {
 
   res.json({ msg: "success" });
 });
-app.listen(5000, () => console.log("Server running at port 5000 !"));
+app.listen(3000, hostname, () => console.log("Server running at port 3000 !"));
